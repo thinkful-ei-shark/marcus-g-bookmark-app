@@ -1,0 +1,14 @@
+
+main {
+    /* background-image: url("images/open_book.jpeg"); */
+    display: flex;
+    text-align: center;
+}
+
+.bookmark {
+    display: flex;
+}
+
+.items {
+    flex: 1;
+}

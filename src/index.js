@@ -3,7 +3,7 @@ import app from './app';
 import './index.css'
 
 function main() {
-  app.render()
+  app.loadBookMarks()
   app.bindEventListeners()
 }
 

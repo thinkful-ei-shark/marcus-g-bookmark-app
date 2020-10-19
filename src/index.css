@@ -1,14 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap");
 
-main {
-    /* background-image: url("images/open_book.jpeg"); */
-    display: flex;
-    text-align: center;
+body {
+    background-image: url("images/wide_scroll.png");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: auto;
+    height: fit-content;
+    font-family: 'MedievalSharp', cursive;
 }
 
-.bookmark {
+main {
     display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 150px;
+}
+
+#add {
+    flex: 1;
+    padding: 5px;
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+#filter {
+    flex: 1;
+    padding: 5px;
+    margin: 20px 20px;
+    border-radius: 5px;
+}
+
+.bookmark-list {
+    display: flex;
+    flex-direction: column;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 25px;
+    background-color: whitesmoke;
+}
+
+#js-form {
+    display: flex;
+    flex-direction: column;
 }
 
 .items {
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
 }
+
+.bookmark {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.marks {
+    flex: 1;
+    padding: 5px 0;
+}
+.title {
+    display: flex;
+    justify-content: space-between;
+    margin: 5px;
+    border-bottom: 1px solid ;
+}
+
+.site {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    
+}
+
+.title-marks {
+    flex: 1;
+}
+
+.marks-site {
+    flex: 1;
+}
+
+.marks-details {
+    flex: 3;
+}
+#delete {
+    background-image: url("images/trash.png");
+    background-repeat: no-repeat;
+    background-position: right;
+}
+a {    
+    justify-content: flex-end;
+    text-decoration: none;
+    background-color: whitesmoke;
+    padding: 3px;
+    border: 1px solid black; 
+    border-radius: 2px;   
+}
+

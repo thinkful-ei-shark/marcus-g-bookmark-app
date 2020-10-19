@@ -17,7 +17,7 @@ function mapBookmarks(bookmark) {
                     <div class="marks-site">${bookmark.rating} stars</div>
                 </div>
                 <div class="details">
-                <div class="marks-details" id="description">${bookmark.description}</div>
+                <div class="marks-details" id="description">${bookmark.desc}</div>
                 </div>
             </div>`
     } else {
@@ -113,13 +113,16 @@ function createBookmark() {
         const url = $('#url').val()
         const title = $('#name').val()
         const rating = parseInt($('#rating').val())
-        const description = $('#description').val()
-        
+        const desc = $('#description').val()
+        if((url === "") || (title === "")) {
+            alert('Please enter valid url or title')
+        }
+
         store.addBookMark({
             url,
             title,
             rating,
-            description,
+            desc,
             expanded
         })
         .then(()=> render())

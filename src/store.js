@@ -44,13 +44,14 @@ function addBookMark(bookmark) {
      body: JSON.stringify(bookmark)
 }
 return fetch(store.apiUrl, options)
-  .then(res => {return res.ok
+  .then(res => {
+    return res.ok
     ? res.json()
     : Promise.reject(res.json())
   })
 
   .then(bookmark => store.bookmarks.push(bookmark))
-  .catch(err => console.log(err))
+  .catch(err => {alert("url must begin with https://")})
 }
 
 function deleteBookMark(id) {

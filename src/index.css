@@ -5,7 +5,6 @@ body {
     background-repeat: no-repeat;
     background-position: top;
     background-size: auto;
-    height: fit-content;
     font-family: 'MedievalSharp', cursive;
 }
 
@@ -100,3 +99,8 @@ a {
     border-radius: 2px;   
 }
 
+@media all and (min-width: 300px) {
+    h1 {
+        font-size: 60px;
+    }
+}

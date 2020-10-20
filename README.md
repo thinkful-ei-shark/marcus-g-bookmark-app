@@ -1,4 +1,4 @@
-Live link: https://thinkful-ei-shark.github.io/marcus-g-bookmark-app/index.html
+Live link: https://thinkful-ei-shark.github.io/marcus-g-bookmark-app/
 
 # BOOKMARKS-app
 
